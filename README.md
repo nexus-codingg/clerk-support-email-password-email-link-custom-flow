@@ -21,6 +21,7 @@ This is a simple Next.js App Router application that implements authentication u
 3. Set up environment variables:
    - Rename `.env.example` to `.env.local`
    - Add your Clerk API keys from the [Clerk Dashboard](https://dashboard.clerk.com/)
+   - In your Clerk Dashboard -> Configure -> Email, phone, username page, ensure that you the following settings enabled: [Image of Clerk Dashboard settings](image/clerk_dashboard_settings.png)
 
 4. Start the development server:
    ```sh
@@ -35,7 +36,12 @@ This is a simple Next.js App Router application that implements authentication u
 
 8. Once the link is clicked, you'll see a success message on the `/verify` page and you will be signed in with the user button visible in the original tab opened.
 
-9. Use the user button to sign-out and use the "Sign-in" link to sign-in with the same user
+Note: This sign-up flow does 3 things:
+1. Verifies the user's email
+2. Sets email + password as a first factor
+3. Sets an email link as a first factor
+
+For the sign-in flow, you can either sign-in using only email+pass or only email link. There is code in the `app/sign-up/[[...sign-up]]/page.tsx` page for both methods.
 
 Note: This example repo does not have bot protection code so there will be an error message in the console. To add bot protection to this custom flow, please visit our [Add bot protection to your custom sign-up flow](https://clerk.com/docs/custom-flows/bot-sign-up-protection) guide
 
