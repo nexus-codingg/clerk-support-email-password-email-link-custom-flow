@@ -101,6 +101,10 @@ export default function SignUpForm() {
     );
   }
 
+  // if (verified) {
+  //   return <div>Signed up successfully!</div>
+  // }
+
   // Display the initial sign-up form to capture the email and password
   return (
     <>

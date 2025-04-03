@@ -1,4 +1,6 @@
 'use client'
+// this is used for the email link verification flow to verify the user's email address
+// https://clerk.com/docs/custom-flows/email-links#sign-in-flow
 
 import * as React from 'react'
 import { useClerk } from '@clerk/nextjs'
