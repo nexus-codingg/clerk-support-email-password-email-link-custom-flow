@@ -21,7 +21,8 @@ This is a simple Next.js App Router application that implements authentication u
 3. Set up environment variables:
    - Rename `.env.example` to `.env.local`
    - Add your Clerk API keys from the [Clerk Dashboard](https://dashboard.clerk.com/)
-   - In your Clerk Dashboard -> Configure -> Email, phone, username page, ensure that you the following settings enabled:
+   - In your Clerk Dashboard -> Configure -> Email, phone, username page, ensure that you the following settings enabled: ![clerk_dashboard_settings](https://github.com/user-attachments/assets/aae373b7-a0e8-4ae1-b78d-0951f141c0a0)
+
 
 4. Start the development server:
    ```sh
