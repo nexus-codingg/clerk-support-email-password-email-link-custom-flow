@@ -3,9 +3,9 @@
 This is a simple Next.js App Router application that implements authentication using Clerk's custom email + password and magic link flows and dedicated sign-in and sign-up forms.
 
 # Related Clerk Documentation 
-- Build a custom email/password authentication flow (https://clerk.com/docs/custom-flows/email-password)
-- Build a custom flow for handling email links (https://clerk.com/docs/custom-flows/email-links)
-- Build your own sign-up page for your Next.js app with Clerk (https://clerk.com/docs/references/nextjs/custom-sign-up-page)
+- [Build a custom email/password authentication flow](https://clerk.com/docs/custom-flows/email-password)
+- [Build a custom flow for handling email links](https://clerk.com/docs/custom-flows/email-links)
+- [Build your own sign-up page for your Next.js app with Clerk](https://clerk.com/docs/references/nextjs/custom-sign-up-page)
 
 1. Clone the repository:
    ```sh
